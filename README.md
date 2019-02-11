@@ -22,9 +22,8 @@ By default, the progress bar will start when a component first begins to mount, 
 ```jsx
 import React from 'react';
 import { render } from 'react-dom';
-import 'nprogress/nprogress.css';
-import './index.css';
-import useProgress from '../../src';
+import 'use-progress/use-progress.css';
+import useProgress from 'use-progress';
 
 function App() {
   useProgress();
