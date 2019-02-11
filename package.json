@@ -1,6 +1,6 @@
 {
   "name": "use-progress",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React Hook to easily add nprogress bars to any page",
   "main": "dist/index.js",
   "scripts": {
