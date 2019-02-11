@@ -12,7 +12,7 @@ npm install --save use-progress
 ### Importing the hook
 
 ```javascript
-import useProgress from ' use-toggle'  
+import useProgress from ' use-progress'  
 ```
 
 ### Usage
