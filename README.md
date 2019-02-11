@@ -33,10 +33,18 @@ function App() {
 }
 render(<App />, document.getElementById("root"));
 ```
-You can pass in a boolean to indicate whether a component is ready beyond waiting to mount, such as when data is ready.
+By default `useProgress` will only track whether a component has finished mounting. You can override this functionality and control when its complete by passing `mountOnly: false` and manually invoking the provided `done` function.
 
 ```jsx
-useProgress(data.isReady);
+const wait = (done) => setTimeout(() => done(), 1000);
+
+function App() {
+  const [status, done] = useProgress({ mountOnly: false });
+  wait(done);
+  return (
+    <div style={{ minHeight: '100vh' }}>Foo!</div>
+  )
+}
 ```
 ## Arguments
 
