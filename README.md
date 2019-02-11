@@ -40,6 +40,14 @@ useProgress(data.isReady);
 ```
 ## Arguments
 
-| Arguments      | Type     | Description                                     | Default value |
-| -------------- | -------- | ----------------------------------------------- | ------------- |
-| isLoaded       | boolean  | Whether any loading is complete                 | true         |
+| Arguments      | Type     | Description                                                                                                                           | Default value |
+| -------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| mountOnly      | boolean  | By default nprogreess will run until component finishes mounting. Passing false to this will wait for the user to manually call done. | true          |
+| configure      | Object   | Object of all possiblee nprogress configs that can be found https://github.com/rstacruz/nprogress                                     | true          |
+
+## Return Values
+
+| Arguments | Type   | Description                                               |
+| --------- | ------ | --------------------------------------------------------- |
+| status    | Number | Number between 0.0 and 1 indicating current progress      |
+| done      | func   | Done function that can be invoked if `mountOnly` is false |
