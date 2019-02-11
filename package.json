@@ -7,9 +7,25 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
     "transpile": "babel src -d dist --copy-files",
-    "prepublishOnly": "npm run transpile"
+    "prepublishOnly": "npm run transpile",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d examples/dist",
+    "publish-demo": "npm run build && npm run deploy"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sicknarlo/use-progress.git"
+  },
+  "keywords": [
+    "use",
+    "react-hooks.org",
+    "react",
+    "hooks",
+    "nprogress",
+    "progress",
+    "progress hook"
+  ],
+  "author": "sicknarlo",
   "license": "ISC",
   "peerDependencies": {
     "react": "^16.8.1",
@@ -22,6 +38,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^2.1.0",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",

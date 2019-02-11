@@ -1,8 +1,7 @@
 /***  examples/src/index.js ***/
 import React from 'react';
 import { render } from 'react-dom';
-import 'nprogress/nprogress.css';
-import './index.css';
+import '../../src/use-toggle.css';
 import useProgress from '../../src';
 function App() {
   useProgress(false);
