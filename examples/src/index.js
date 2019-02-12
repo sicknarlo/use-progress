@@ -1,7 +1,7 @@
 /***  examples/src/index.js ***/
 import React from 'react';
 import { render } from 'react-dom';
-import '../../src/use-toggle.css';
+import '../../src/use-progress.css';
 import useProgress from '../../src';
 
 const wait = (done) => setTimeout(() => done(), 1000);
